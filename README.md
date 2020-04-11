@@ -1,1 +1,1 @@
-# hillcrest_windows_remodeling
+# Hillcrest Windows & Remodeling WordPress Theme
