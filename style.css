@@ -1,0 +1,467 @@
+/*
+Theme Name:     Hillcrest Theme
+Theme URI:      
+Description:    Custom theme for Hillcrest Windows & Remodeling LCL
+Author:         Brendan Lenzner
+Author URI:     
+Version:        1.0
+*/
+
+@import url("../hillcrest/css/font-faces.css");
+
+html {
+    overflow-y:scroll;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.main-body {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.main-body p {
+	line-height: 1.6rem;
+}
+
+/* -------------------------------------- Header --------------------------------------- */
+.page-header {
+	padding-top: 10px;
+}
+
+.site-title {
+	font-size: 1.7rem;
+}
+
+.site-title a {
+	color: #212529;
+}
+
+.site-title a:hover {
+	color: #212529;
+	text-decoration: none;
+}
+
+.site-title > a > .title-text{
+	border-left: 1px solid #ddd;
+	margin-left: 10px;
+	padding-left: 15px;
+}
+
+#logo {
+    width: 200px;
+}
+
+.widget {
+	list-style: none;
+}
+
+.widget a, .content a {
+	color: #2f62e4;
+	font-weight: bold;
+}
+
+.hillcrest-sidebar a {
+	color: #212529;
+	font-weight: normal;
+}
+
+.hillcrest-sidebar a:hover {
+	color: #000;
+}
+
+.hillcrest-sidebar p {
+	font-size: 0.92rem;
+}
+
+.sidenav-title, .sidenav-title > a {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sidenav-title:after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #d41b21;
+    margin: 0.7em 0;
+}
+
+.page-title {
+    background-color: #d41b21;
+    color: white;
+    width: 100%;
+}
+.page-title > .container > h2 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.page-wrap {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.hillcrest-sidebar {
+	border-right: 1px solid #ddd;
+	padding-right: 35px;
+}
+
+.content {
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+.hillcrest-sidebar, .content {
+	padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* --------------------------------------------- Navigation Bar ------------------------------------------- */
+.navbar .navbar-toggler { 
+	margin-left: auto;
+}
+
+.navbar .nav-link {
+    color: #212529 !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #000 !important;
+}
+
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background-color: white !important;
+}
+
+/* Navbar hover effects (only on desktop views) */
+@media screen and (min-width: 991px) {
+	.navbar-nav > li.current-menu-item {
+		border-top: 2px solid #d41b21;
+		margin-top: 0px;
+	}
+	.navbar-nav >li.current-menu-item > a {
+		margin-top: -2px;
+	}
+	.navbar-nav > li {
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-moz-osx-font-smoothing: grayscale;
+		position: relative;
+		overflow: hidden;
+		margin-left: 3px;
+		margin-right: 3px;
+	}
+	 .navbar-nav > li:not(.current-menu-item):before {
+		content: "";
+	    position: absolute;
+	    z-index: -1;
+	    left: 0;
+	    right: 100%;
+	    top: 0;
+	    background-color: #d41b21;
+	    height: 2px;
+	    -webkit-transition-property: right;
+	    transition-property: right;
+	    -webkit-transition-duration: 0.4s;
+	    transition-duration: 0.4s;
+	    -webkit-transition-timing-function: ease-in-out;
+	    transition-timing-function: ease-in-out;
+  	}
+  	.navbar-nav > li:not(.current-menu-item):hover:before {
+    	right: 0;
+  	}
+}
+
+/* --------------------------------------------- Hero ---------------------------------------------- */
+#hero {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+}
+
+#hero > .widget {
+	width: 100%;
+}
+
+#hero .flexslider {
+    margin-bottom: 0 !important;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(0deg,rgba(0,0,0,.75),transparent);
+}
+
+.hero-sm {
+	font-size: 2.2rem;
+	color: #fff;
+}
+
+.hero-text {
+	font-size: 1.7rem;
+	color: #fff;
+}
+
+/* ------------------------------------------ Footer ------------------------------------------ */
+.hillcrest-footer {
+	border-top: 1px solid #ddd;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+}
+
+.footer-area {
+	text-align: center;
+	padding-left: 0;
+}
+
+.footer-area a:hover, .content a:hover {
+	color: #134699;
+	text-decoration: underline;
+}
+
+.ws-footer-logo {
+	max-width: 100%;
+	max-height: 110px;
+	margin-bottom: 20px;
+}
+
+#logo1{
+	margin-top: 10px;
+	height: 95px;
+}
+
+#logo2{
+	margin-top: 10px;
+}
+
+#logo3{
+	margin-top: 20px;
+	width: 85%;
+	float: left;
+}
+
+#logo4{
+	float: right;
+}
+
+#logo2Div{
+	padding-left: 0;
+	padding-right: 0;
+}
+/* ----------------------------------------- Front Page ----------------------------------------- */
+.front-page-text { 
+	font-size: 1.1rem; 
+	color: #212529;
+	text-align:center; 
+	font-weight:bold; 
+	margin-bottom: 35px;
+}
+
+.front-button-images {
+	margin-top: 40px;
+}
+
+.front-button-images img {
+	width: 100%;
+	-webkit-filter: brightness(100%);
+}
+
+.front-button-images img:hover {
+	-webkit-filter: brightness(70%);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.front-button-images a {
+	color: #212529;
+}
+
+.front-button-images a:hover {
+	text-decoration: none;
+}
+
+.btn-img-title {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* -------------------------------- Gravity Forms ---------------------------------------------- */
+.gform_wrapper input, .gform_wrapper textarea {
+	border: 1px solid #b5b8ba;
+	border-radius: 3px;
+}
+
+.gform_button{
+    background-color: #d41b21;
+    color: #fff;
+    padding: 5px 20px;
+}
+/* -------------------------------- Miscellaneous ---------------------------------------------- */
+.m-only{
+	display: none;
+}
+.red-hr {
+	margin-left: auto;
+	margin-right: auto;
+	border-color: #d41b21;
+}
+
+.img-round {
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+/* ---------------------------------- Theme Buttons -------------------------------------- */
+
+.hillcrest-btn {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #d41b21;
+    padding: 10px 20px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    border: 0;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+.hillcrest-btn:hover {
+	text-decoration: none !important;
+	background-color: #255aad;
+}
+
+/* ----------------------------------- Bootstrap buttons --------------------------------- */
+
+.btn-primary, .btn-secondary, .btn-success, .btn-danger, .btn-warning, .btn-info, .btn-dark {
+	color: #fff !important;
+}
+
+a.btn{
+	text-decoration: none !important;
+}
+
+/* ----------------------------------------- Media Queries ------------------------------------- */
+@media screen and (max-width: 991px) {
+	.navbar.navbar-expand-lg.navbar-light.bg-light {
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	}
+
+	.page-header {
+		border-bottom: 1px solid #ddd;
+	}
+
+	.btn-img-title {
+	    text-align: center;
+	    font-size: 1.0rem;
+	}
+
+	.navbar-toggler{
+		margin-bottom: 10px;
+	}
+
+	.navbar-collapse{
+		border-top: 1px solid #ddd;
+	}
+
+	#menu-main-navigation-menu:first-child{
+		margin-top: 10px;
+	}
+
+	#logo3{
+		width: 40%;
+		float: none;
+	}
+
+	#logo4{
+		float: none;
+	}
+	.m-only{
+		display: block;
+	}
+}
+@media screen and (max-width: 767px){
+	.content{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.site-title {
+		font-size: 1.3rem;
+	}
+
+	.hillcrest-sidebar {
+		display: none;
+	}
+
+	.hero-content {
+		position: relative;
+		background: #f1f1f1;
+	}
+
+	.hero-sm {
+		color: #000;
+		font-size: 1.9rem;
+	}
+
+	.hero-text {
+		color: #000;
+	}
+
+	#logo {
+		width: 150px;
+	}
+}
+
+@media (max-width: 575.98px) { 
+	.page-title > .container > h2{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.container > .main-body{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.hillcrest-sidebar {
+	    margin-top: 0;
+	}
+	.site-title {
+		font-size: 1.1rem;
+	}
+	.hero-sm {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 423px) { 
+	#logo{
+		width: 125px;
+	}
+}
