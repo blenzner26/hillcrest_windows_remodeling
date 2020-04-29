@@ -342,10 +342,10 @@ body {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     display: inline-block;
     background-color: #d41b21;
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-weight: 700;
     margin: 0 0 10px;
     border: 0;
@@ -354,7 +354,7 @@ body {
 }
 .hillcrest-btn:hover {
 	text-decoration: none !important;
-	background-color: #255aad;
+	background-color: #BB0208;
 }
 
 /* ----------------------------------- Bootstrap buttons --------------------------------- */
