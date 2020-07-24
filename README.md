@@ -3,4 +3,7 @@
 This is a custom WordPress theme using Bootstrap.
 
 ## Dependencies
-Bootstrap
+<ul>
+  <li>Bootstrap</li>
+  <li>Google Fonts</li>
+</ul>
